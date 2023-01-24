@@ -55,16 +55,17 @@ class Productos{
 
 let catalogo_productos = [];
 
-catalogo_productos.push(new Productos("Jean", 5000 , 38 , 5));
-catalogo_productos.push(new Productos("Jean", 5000 , 40 , 8));
-catalogo_productos.push(new Productos("Jean", 5000 , 42 , 4));
-catalogo_productos.push(new Productos("Jean", 5000 , 44 , 3));
-catalogo_productos.push(new Productos("Remera", 3000, 1 , 5));
-catalogo_productos.push(new Productos("Remera", 3000, 2 , 6));
-catalogo_productos.push(new Productos("Remera", 3000, 3 , 8));
-catalogo_productos.push(new Productos("Remera", 3000, 4 , 3));
-catalogo_productos.push(new Productos("Sweater", 10000, 2 , 3));
-catalogo_productos.push(new Productos("Sweater", 10000, 3 , 4));
+catalogo_productos.push(new Productos("JEAN", 5000 , 38 , 5));
+catalogo_productos.push(new Productos("JEAN", 5000 , 40 , 8));
+catalogo_productos.push(new Productos("JEAN", 5000 , 42 , 4));
+catalogo_productos.push(new Productos("JEAN", 5000 , 44 , 3));
+catalogo_productos.push(new Productos("REMERA", 3000, 1 , 5));
+catalogo_productos.push(new Productos("REMERA", 3000, 2 , 6));
+catalogo_productos.push(new Productos("REMERA", 3000, 3 , 8));
+catalogo_productos.push(new Productos("REMERA", 3000, 4 , 3))
+catalogo_productos.push(new Productos("SWEATER", 10000, 1 , 5));
+catalogo_productos.push(new Productos("SWEATER", 10000, 2 , 3));
+catalogo_productos.push(new Productos("SWEATER", 10000, 3 , 4));
 
 
 // fin alta de productos
@@ -111,7 +112,8 @@ function comprar(){
     let total_compra = 0;
      
     do {
-        compra_usuario =  prompt("Ingrese el producto que desea comprar");
+        let eleccion =  prompt("Ingrese el producto que desea comprar");
+        compra_usuario = eleccion.toUpperCase();
     
         let resultado_Nombre = catalogo_productos.filter(buscar_productoNombre);
         console.log(resultado_Nombre);

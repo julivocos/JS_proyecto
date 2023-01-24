@@ -12,9 +12,16 @@ body{
 
 li{
     list-style: none;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
+    padding-bottom: 15px;
    
+}
+p{
+
+    font-size: 22px;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 ul{
     padding-left: 0px;
