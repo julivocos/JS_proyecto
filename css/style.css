@@ -1,39 +1,129 @@
-header{
-    height: 200px;
-}
+*{
+    margin:0;
+    padding: 0;
+   }
 
 body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}   
+
+header{
+    height:160px;
+    background-color:rgb(243, 192, 192);
+    display: flex;
+    flex-direction: column;
+
     
-    background-color: rgb(238, 158, 129);
+}
+
+.carrito{
+    text-align: left;
+
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height:100px;
+    background-color:rgb(243, 200, 200);
+    font-size: 20px;
+        
+    
+}
+.colapse_carrito{
+    background-color:rgb(243, 192, 192);
     color: black;
-    text-align: center;
+    
+}
+.nav{
+    
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-content:center;
+}
+
+.nav-link{
+    
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    
+}
+
+.nav-link:hover{
+    color: rgb(236, 92, 92);
+
+}
+
+
+.main_index{
+    
+    background-image:url(../img/fondo.jpg);
+    height: 900px;
+
+
+}
+
+.form-control{
+    width: 800px;
+    
+  
+}
+
+.form-label{
     font-size: 20px;
 }
 
-li{
-    list-style: none;
-    font-size: 30px;
-    font-weight: bold;
-    padding-bottom: 15px;
+.titulo_contacto{
+    margin-bottom: 35px;
+}
+.container_contacto{
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.container_index{
+    height: 700px;
+    display: flex;
+    flex-direction: column  ; 
+    justify-content: center;
+    align-content:center;
+    text-align: center;
+    
+}
+
+.container_prod{
+    margin-left: 25%;
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
    
-}
-p{
-
-    font-size: 22px;
-    margin-top: 0;
-    margin-bottom: 10px;
-}
-ul{
-    padding-left: 0px;
+    
 }
 
-.btn{
-    background-color: white;
-    color: rgb(226, 105, 61);
-    width: 280px;
-    height: 90px;
-    font-size: 30px;
-    cursor: pointer;
-    border-radius: 10px;
-    border: 0px;
+img{
+    height: 310px;
+    
 }
+
+.bg-danger{
+    font-size: 10px;
+}
+
+td{
+    font-size: 12px;
+}
+
+.btn-danger{
+    font-size: 11px;
+}
+
+
+
+
